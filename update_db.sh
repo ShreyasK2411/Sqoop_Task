@@ -1,12 +1,12 @@
 #!/bin/bash
 
-sqoop job 
---create update\
---import\
---connect jdbc:mysql://localhost:3306/test\
---driver com.mysql.jdbc.Driver\
---username bigdata\
---password Bigdata@123\
---table salaries\
---incremental append\
---check-column id
+sqoop import --connect jdbc:mysql://localhost:3306/test \
+--driver com.mysql.jdbc.Driver \
+--username root \
+--password cloudera \
+--table salaries \
+--target-dir salaries \
+--incremental append \
+--check-column id \
+--last-value 50 \
+--m 1
