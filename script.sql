@@ -1,6 +1,8 @@
 use test;
 
-create table IF NOT EXISTS salaries (
+drop table salaries;
+
+create table  salaries (
 gender varchar(1),
 age int,
 salary double,
