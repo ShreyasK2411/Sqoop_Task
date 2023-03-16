@@ -1,4 +1,5 @@
 # Sqoop Task
+*Note: This task was assigned to me by our Big Data trainer and present it in the class*
 ## Description
 This scripts implement the incremental input in Sqoop. Incremental import is a technique that imports only the newly added rows in a table.
 ## Executing the scripts
