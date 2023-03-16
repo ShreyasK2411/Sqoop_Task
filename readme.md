@@ -10,3 +10,10 @@ bash load.sh
       - This script checks if the file exists in hdfs, if it exists then delete the existing files.
       - Runs a sql script for creating a table in mysql and populating it
       - If the above operation is successful then it run the import.sh script, which creates a sqoop job and executes it, therby adding the data present in the table in hdfs.
+- Run the update_db.sh script, using the following command:
+```bash
+bash update_db.sh
+```
+    - Description
+        - This script adds two new records in the sql table and,
+        - Updates the data present in hdfs with newly update rows from the sql table. 
